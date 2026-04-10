@@ -1,0 +1,253 @@
+%-------------------------
+% Resume in Latex
+% Author : Rishi Yang
+% Based off of: https://github.com/sb2nov/resume and https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Indented project heading
+\newcommand{\resumeIndentedProjectHeading}[2]{%
+    \hspace*{0.12in}
+    \begin{tabular*}{0.95\textwidth}{l@{\extracolsep{\fill}}r}
+      • \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Rishi Tikare Yang} \\ \vspace{1pt}
+    \small 505-377-0420 $|$ \href{mailto:rishtyang@gmail.com}{\underline{rishtyang@gmail.com}} $|$ Berkeley, CA $|$
+    \href{https://linkedin.com/in/rishi-yang/}{\underline{linkedin.com/in/rishi-yang}} $|$
+    \href{https://github.com/rishikiram}{\underline{github.com/rishikiram}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Berkeley}{Berkeley, CA}
+      {Bachelor of Arts in Computer Science — GPA: 3.8}{Aug. 2020 -- May. 2024}
+      \resumeItemListStart
+        \resumeItem{(Math) -  Machine Learning, Probability and Random Processes, Optimization, Discrete Math}
+        \resumeItem{(Software) - Databases, Algorithms,  Data Structures, Computer Architectures and Programs}
+        \resumeItem{(Technologies) - Robotics, Photovoltaic Devices, Energy Markets in the Clean Transition}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+  % EnviTrace
+    \resumeSubheading
+      {Software Developer}{Oct. 2024 -- Nov. 2025}
+      {EnviTrace LLC}{Santa Fe, NM}
+      \resumeItemListStart
+        \resumeItem{Studied, processed and visualized geospatial data, primarily subsurface data}
+        \resumeItem{Developed and executed ML algorithms, analyzed results, and presented findings}
+        \resumeItem{Developed a data-driven software product for commercializing the company’s analytic methods}
+      \resumeItemListEnd
+        %-----------INDENTED PROJECT-----------
+        \resumeIndentedProjectHeading{\textbf{Web Application for Geospatial AI Services} $|$ \emph{Next.js, React, API, Data Visualization}}{Fall 2025}
+        \begin{quote}
+          \resumeItemListStart
+            \resumeItem{Developed a Next.js web application to run, manage, and visualize geospatial ML analyses through GUIs}
+            \resumeItem{Designed a CNN, non-negative matrix factorization, and XGBoost models for clustering and prediction}
+            \resumeItem{Built a custom Julia backend and API with services for data ETL and model training}
+          \resumeItemListEnd
+        \end{quote}
+        %-----------INDENTED PROJECT-----------
+        \resumeIndentedProjectHeading{\textbf{Data Analysis for Geologic Hydrogen} $|$ \emph{Dataset Curation, Geospatial Data}}{Summer 2025}
+        \begin{quote}
+          \resumeItemListStart
+            \resumeItem{Studied the statistical relationship between magnetic anomaly, gravity anomaly, and failed rift geologic structures—building off of a USGS study on geologic hydrogen prospectivity}
+            \resumeItem{Applied correlation measures, chi-square tests of independence, mutual information metrics, and multiple regression techniques to assess variable relationships}
+          \resumeItemListEnd
+        \end{quote}
+        %-----------INDENTED PROJECT-----------
+        \resumeIndentedProjectHeading{\textbf{Seismic Event Database} $|$ \emph{PostgreSQL, Database Design, Data ETL, Data Validation}}{Fall 2024}
+        \begin{quote}
+          \resumeItemListStart
+            \resumeItem{Designed efficient tables and relationships for seismic event data}
+            \resumeItem{Built ETL/ingestion pipelines with robust data validation and sanitization}
+            \resumeItem{Wrote complex SQL queries to load input data for our ML algorithms}
+          \resumeItemListEnd
+        \end{quote}
+      
+% -----------Multiple Positions Heading-----------
+  %  \resumeSubSubheading
+  %   {Software Engineer I}{Oct 2014 - Sep 2016}
+  %   \resumeItemListStart
+  %      \resumeItem{Apache Beam}
+  %        {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+  %   \resumeItemListEnd
+  %  \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Summer Undergraduate Laboratory Internship (SULI)}{Jun. 2023 -- Aug. 2023}
+      {Sandia National Laboratories}{Albuquerque, NM}
+      \resumeItemListStart
+        \resumeItem{Researched feature extraction using an optical computer for material microstructure phase classification}
+        \resumeItem{Implemented statistical analysis with scikit-learn and GPU optimizations with PyTorch in python}% TODO
+        \resumeItem{Developed networking software to remotely run experiments, then validated the model from the results} 
+        \resumeItem{Developed figures, presented results, gave an oral presentation, and wrote a scientific-paper style report}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Outreach Head, Site Leader, Mentor}{Aug. 2020 -- May 2024}
+      {Berkeley Engineers and Mentors}{Berkeley, CA}
+      \resumeItemListStart
+        \resumeItem{Lead the Outreach committee responsible for organizing volunteer events and socials}
+        \resumeItem{Lead a school site, organizing and mentoring 4-5 college students to teach weekly science lessons}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{Robotic Arm Sorting} $|$ \emph{Robotic Control, Computer Vision, K-Means Clustering}}
+          {Fall 2023, EECS 106a}
+          \resumeItemListStart
+            \resumeItem{Developed software to adaptively model the environment from a moving camera}
+            \resumeItem{Implemented unsupervised object identification with k-means clustering, and an inverse kinematic controller to pick and place blocks}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, SQL, Typescript, Julia, C, Java}\\
+     \textbf{Tools \& Libraries}{: PostgreSQL, Git, PyTorch, Next.js, React, PlotlyJS, Scikit-learn, ROS2}\\ 
+     \textbf{Interpersonal Skills}{: Leadership, Teamwork, Communication. Fluent in English and Spanish}\\
+     \textbf{Interests}{: Soccer, Tennis, Outdoors Activities, Cooking, Origami, Ceramics, Learning Languages}
+    }}
+  \end{itemize}
+%-------------------------------------------
+
+\section{References - \emph{\small{contact available on request}}}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      Dr. Adam Rupe - Former Scientist at EnviTrace, Dynamical Systems and Machine Learning\\
+      Ari Markowitz - Former Data Scientist at EnviTrace, geospatial data imputation/processing\\
+      Dr. Prasad Iyer - Metasurface \& Optics, Senior Member of Technical Staff at Sandia National Labs\\
+    }}
+   \end{itemize}
+   
+\end{document}
+
